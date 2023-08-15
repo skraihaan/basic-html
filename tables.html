@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tables</title>
+	<style>
+		img {
+			border-radius: 30px;
+			border: 1px solid black;
+		}
+
+		a {
+			text-decoration: none;
+			background-color: red;
+			color: white;
+			padding: 5px;
+			border-radius: 10px;
+		}
+	</style>
+	<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+	<table width="100%" border="1" cellspacing="10" cellpadding="5" frame="box">
+		<caption>Products List</caption>
+		<colgroup span="1"></colgroup>
+		<thead>
+			<tr>
+				<th>Name <span class="bi bi-sort-alpha-down"></span> </th>
+				<th>Price <span class="bi bi-sort-alpha-down"></span></th>
+				<th>Stock <span class="bi bi-sort-alpha-down"></span> </th>
+				<th>Preview</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr align="center" valign="center">
+				<td>iphone14White</td>
+				<td align="right">&#8377; 1,29,990/-</td>
+				<td>Available</td>
+				<td>
+					<img src="images/iphone14.white.jpg" width="50" height="50">
+				</td>
+				<td>
+					<a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+					<a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+					<a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>iphone14 black</td>
+				<td align="right">&#8377; 1,20,990-</td>
+				<td>Available</td>
+				<td>
+					<img src="images/iphone14.jpg" width="50" height="50">
+				</td>
+				<td>
+					<a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+					<a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+					<a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+				</td>
+			</tr>
+			<tr align="center" valign="center">
+				<td>realme black</td>
+				<td align="right">&#8377; 12990/-</td>
+				<td>Available</td>
+				<td>
+					<img src="images/realme black.png" width="50" height="50">
+				</td>
+				<td>
+					<a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+					<a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+					<a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>&copy; Copyright 2023</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>

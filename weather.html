@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather</title>
+	<style>
+		.parent-tale {
+			border-radius: 10px;
+			background-image: url(images/weather.webp);
+			background-size: cover;
+		}
+
+		.loc-tittle {
+			font-size: 20px;
+			color: rgb(217, 204, 204);
+			text-shadow: 1px 1px 1px black;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.loc-tittle p {
+			font-size: 15px;
+			text-shadow: 1px 1px 1px black
+		}
+
+		.icns {
+			font-size: 20px;
+			color: white;
+		}
+
+		unit,
+		.bi-water {
+			font-size: 60px;
+			font-weight: bold;
+			font-family: Arial, Helvetica, sans-serif;
+			color: chartreuse;
+			text-shadow: 1px 1px 1px black;
+		}
+
+		.cf {
+			font-size: 25px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: black;
+		}
+
+		.cf-w {
+			font-size: 18px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: rgb(133, 87, 87);
+		}
+
+		.parent-tale table {
+			font-family: Arial, Helvetica, sans-serif;
+			color: wheat;
+
+		}
+
+		.slidetr {
+			width: 100%;
+		}
+	</style>
+	<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+	<table class="parent-table" width="50" height="400" cellpadding="20" bgcolor="skyblue">
+		<tr>
+			<td class="loc-tittle" colspan="3" valign="top">
+				Latur,MH
+				<p>Updated few sec ago</p>
+			</td>
+			<td class="icons" colspan="2" align="right" valign="top">
+				<span class="bi bi-share-fill"></span>
+				<span class="bi bi-three-dots"></span>
+			</td>
+		<tr>
+			<td width="10">
+				<span class="bi bi-water "></span>
+			</td>
+			<td class="unit" width="10">
+				28
+			</td>
+			<td class="cf" align="center" width="10">
+				&deg;C <br>
+				<hr color="black" width="10">
+				F
+			</td>
+			<td class="cf">
+				30&deg;<br> <br>
+				23&deg;
+			</td>
+			<td>
+				Percipitation:2% <br><br>
+				Wind: 8KMPH<br> <br>
+				Humidity: 61%
+			</td>
+		</tr>
+		<tr>
+			<td colspan="5" class="cf-w">
+				Haze-tue 8,9:15pm
+			</td>
+		</tr>
+		</tr>
+		<tr>
+			<td colspan="5">
+				<table width="100">
+					<tr align="center">
+						<td align="left">12 PM</td>
+						<td>3 PM</td>
+						<td>6 PM</td>
+						<td>9 PM</td>
+						<td>12 AM</td>
+						<td>3 AM</td>
+						<td>6 AM</td>
+						<td align="right">9 AM</td>
+					</tr>
+					<tr>
+						<td colspan="8">
+							<input type="range" value="1" class="slider">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<td colspan="5">
+			<table width="100%" cellpadding="5" border="0" frame="void" cellspacing="5">
+				<tr height="160" bgcolor="gray">
+					<td class="details" align="center">
+						Tue 8<br>
+						<span class="bi bi-water"></span> <br>
+						30&deg;<br>
+						23&deg;
+
+					</td>
+					<td>
+						Tue 9<br>
+						<span class="bi bi-water"></span> <br>
+						30&deg;<br>
+						23&deg;
+					</td>
+					<td>
+						Tue 10<br>
+						<span class="bi bi-water"></span> <br>
+						30&deg;<br>
+						23&deg;
+					</td>
+					<td>
+						Tue 11<br>
+						<span class="bi bi-water"></span> <br>
+						30&deg;<br>
+						23&deg;
+					</td>
+					<td>
+						Tue 12<br>
+						<span class="bi bi-water"></span> <br>
+						30&deg;<br>
+						23&deg;
+					</td>
+					<td>
+						Tue 13<br>
+						<span class="bi bi-water"></span> <br>
+						30&deg;<br>
+						23&deg;
+					</td>
+					<td>
+						Tue 14<br>
+						<span class="bi bi-water"></span> <br>
+						30&deg;<br>
+						23&deg;
+					</td>
+					<td>
+						Tue 15<br>
+						<span class="bi bi-water"></span> <br>
+						30&deg;<br>
+						23&deg;
+					</td>
+
+				</tr>
+
+			</table>
+
+		</td>
+	</table>
+
+</body>
+
+</html>

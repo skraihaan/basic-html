@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meter</title>
+	<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+	<style>
+		meter {
+			width: 150px;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			margin-bottom: 20px;
+		}
+
+		.bi-star-fill {
+			color: gold;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li>
+			5<span class="bi bi-star-fill"></span>
+			<meter min="1" max="5" value="5"></meter>
+			9,645
+
+		</li>
+		<li>
+			4<span class="bi bi-star-fill"></span>
+			<meter min="1" max="2" value="3"></meter>
+			7,645
+
+		</li>
+
+
+		<li>
+			3<span class="bi bi-star-fill"></span>
+			<meter min="1" max="5" value="3"></meter>
+			7,645
+
+		</li>
+
+		<li>
+			2<span class="bi bi-star-fill"></span>
+			<meter min="1" max="5" value="3"></meter>
+			3,455
+
+		</li>
+
+		<li>
+			1<span class="bi bi-star-fill"></span>
+			<meter min="1" max="2" value="2"></meter>
+			2456
+
+		</li>
+
+	</ul>
+
+
+	<fieldset c0lo>
+		<legend>Downloading</legend>
+		<dl>
+			<dt>Preparing for download</dt>
+			<dd>
+				<progress></progress>
+			</dd>
+			<dt>40% Completed</dt>
+			<dd>
+				<progress min="1" max="100" value="40"></progress>
+			</dd>
+			<dt>Download Complete</dt>
+			<dd>
+				<progress min="1" max="100" value="100"></progress>
+			</dd>
+		</dl>
+	</fieldset>
+
+</body>
+
+</html>

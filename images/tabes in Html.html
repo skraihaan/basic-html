@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/tables.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tables</title>
+	<style>
+		img {
+			border-radius: 30px;
+			border: 1px solid black;
+		}
+
+		a {
+			text-decoration: none;
+			background-color: darkgrey;
+			color: white;
+			padding: 5px;
+			border-radius: 10px;
+		}
+	</style>
+	<link rel="stylesheet" href="./tabes in Html_files/bootstrap-icons.css">
+</head>
+
+<body>
+	<table width="100%" border="1">
+		<caption>Products List</caption>
+		<colgroup span="4"></colgroup>
+		<thead>
+			<tr>
+				<th>Name <span class="bi bi-sort-alpha-down"></span> </th>
+				<th>Price <span class="bi bi-sort-alpha-down"></span></th>
+				<th>Stock <span class="bi bi-sort-alpha-down"></span> </th>
+				<th>Preview</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>i phone14 white</td>
+				<td>₹ 1,30,990/-</td>
+				<td>Available</td>
+				<td>
+					<img src="./tabes in Html_files/iphone14.white.jpg" width="50" height="50">
+				</td>
+				<td>
+					<a href="http://127.0.0.1:5500/tables.html#"> <span class="bi bi-eye-fill"></span> Details</a> |
+					<a href="http://127.0.0.1:5500/tables.html#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+					<a href="http://127.0.0.1:5500/tables.html#"> <span class="bi bi-trash-fill"></span> Delete</a>
+				</td>
+			</tr>
+			<tr>
+				<td>I pohone 14</td>
+				<td>₹ 1,20,990</td>
+				<td>Available</td>
+				<td>
+					<img src="./tabes in Html_files/iphone14.jpg" width="50" height="50">
+				</td>
+				<td>
+					<a href="http://127.0.0.1:5500/tables.html#"> <span class="bi bi-eye-fill"></span> Details</a> |
+					<a href="http://127.0.0.1:5500/tables.html#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+					<a href="http://127.0.0.1:5500/tables.html#"> <span class="bi bi-trash-fill"></span> Delete</a>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>© Copyright 2023</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tfoot>
+	</table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
